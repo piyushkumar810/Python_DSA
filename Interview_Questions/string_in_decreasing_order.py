@@ -14,6 +14,5 @@ def sort_the_string(str,x):
 
 
 
-
 str="akash 43 vishal 78 mohan 96 rohit 78 shivam 49"
 sort_the_string(str,50)
