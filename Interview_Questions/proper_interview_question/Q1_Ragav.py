@@ -9,8 +9,30 @@
 
 # ------------------------------ans
 def security_lock(code):
+
     code_in_list=code.split(" ")
     print(code_in_list)
 
-code=input("enter four digit security pin : ")
-result=security_lock(code)
+    if(code_in_list[0]>code_in_list[1]>code_in_list[2]>code_in_list[3]):
+        return f"Door Unlocked 🚪"
+                
+    else:
+        return f"your entered pin is wrong"
+    
+attempts=1
+max_attempts=3
+while(attempts<=max_attempts):
+
+    code=input("enter four digit security pin (space seprated) : ")
+    result=security_lock(code)
+
+    if(result=="Door Unlocked 🚪"):
+        print(result)
+        break
+
+    else:
+        attempts+=1
+    
+if(attempts==max_attempts):
+    print("too many failed attemped")
+
