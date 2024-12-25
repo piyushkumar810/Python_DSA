@@ -4,7 +4,6 @@
 # the tool prompts the user to enter four angles of a quadrilateral and the program should determine whether 
 # the angle forms a quadrilateral. once the shape determined , incorporate the break statement.
 
-
 def check_quadrilateral(angles):
     seperated_angle=angles.split(" ")
     # print(seperated_angle)
@@ -20,7 +19,6 @@ def check_quadrilateral(angles):
     
     else:
         return f"your no of entered angle is may be less than or greater then four "
-
 
 angle=input("input four angles space seperated : ")
 angles=check_quadrilateral(angle)
