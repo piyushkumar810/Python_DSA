@@ -33,7 +33,12 @@ l1.add_node(54)
 # print(l1.head.data)
 # print(l1.head.next)
 
-# print(l1.head.next)
+# print(l1.head.next.data)
+# print(l1.head.next.next)
+
+# print(l1.head.next.next.data)
+# print(l1.head.next.next.next)
+# print("\n")
 
 
 # -------------------------- displaying the linked list
@@ -82,3 +87,5 @@ print(find_length(l2.head))
 #         return 0
 #     else:
 #         return 1+ find_length_recursively(head.next)
+
+# print(find_length_recursively(l2.head))
