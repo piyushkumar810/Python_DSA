@@ -34,6 +34,7 @@ def lower_bound_optimal(arr,x):
             low=mid+1
     return ans
 
+
 arr=[1,2,3,3,6,8,9]
 x=int(input("Enter the value you want the lower bound : "))
 lower_bound_index=lower_bound_optimal(arr,x)
