@@ -24,7 +24,7 @@ def display(root):
         display(root.left)
         display(root.right)
 
-# print(display(root))
+# display(root)
 print()
 
 # pre order traversal of tree (root -> left -> right)
@@ -36,7 +36,7 @@ def pre_order(root):
         pre_order(root.left)
         pre_order(root.right)
 
-print(pre_order(root))
+pre_order(root)
 print()
 
 # in order traversal of tree (left -> root ->  right)
@@ -48,7 +48,7 @@ def in_order(root):
         print(root.val , end=" ")
         in_order(root.right)
 
-print(in_order(root))
+in_order(root)
 print()
 
 # post order traversal of tree (left -> right -> root)
@@ -60,4 +60,4 @@ def post_order(root):
         post_order(root.right)
         print(root.val , end=" ")
 
-print(post_order(root))
+post_order(root)
