@@ -93,3 +93,13 @@ def height_of_tree(root):
     
 tree_height=height_of_tree(root)
 print(f"height of tree = {tree_height}")
+print()
+
+# printing size of tree
+def size_of_tree(root):
+    if root is None:
+        return 0
+    else:
+        return (size_of_tree(root.left) + size_of_tree(root.right) +1)
+    
+print("the size of tree is : ",size_of_tree(root))
