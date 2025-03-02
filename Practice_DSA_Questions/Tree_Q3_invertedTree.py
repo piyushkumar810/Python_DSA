@@ -12,7 +12,6 @@ def invertedTree(root):
     else:
         # swap
         root.left, root.right = root.right, root.left
-
         invertedTree(root.left)
         invertedTree(root.right)
         return root
