@@ -45,8 +45,9 @@ def creating_adjacency_matrix(num_vertices, edges):
 
     # Fill the adjacency matrix based on the given edges
     for u, v in edges:
-        adj_matrix[u][v] = 1  # Mark the edge from u to v
-        
+        adj_matrix[u][v] = 1  # Mark the edge from u to v or u to v (in both direction)
+        adj_matrix[v][u] = 1  
+
     return adj_matrix
 
 # Define the number of vertices in the graph
