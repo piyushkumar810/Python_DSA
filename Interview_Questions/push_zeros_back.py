@@ -3,14 +3,11 @@
 def remove_zeros(my_list):
     non_zero=[]
     zeros=[]
-
     for i in my_list:
         if(i!=0):
             non_zero.append(i)
-
         else:
             zeros.append(i)
-
     return non_zero + zeros
 
 
