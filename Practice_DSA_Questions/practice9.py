@@ -8,16 +8,19 @@ def print_no_recursively(num_list, i):
     print_no_recursively(num_list, i+1)
 
 print_no_recursively([3,5,7,9,1], 0)
-
+print()
 
 #--------- QUESTION 2 ---------
 # Write a Python program to calculate the sum of a list of numbers using recursion. 
 
 def sum_of_list(num_list, i):
-    if(i>=len(num_list)):
-        return 0
+    if(i==len(num_list)-1):
+        return num_list[i]
     else:
         return num_list[i] + sum_of_list(num_list, i+1)
-         
-         
-sum_of_list([2,3,5,7,9], 0)
+    
+print(f"sum is = ",sum_of_list([3,5,7,9,1], 0))
+print()
+
+#--------- QUESTION 3 ---------
+# Write a Python program to find the maximum element in a list using recursion.
