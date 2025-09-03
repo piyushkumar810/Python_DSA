@@ -24,3 +24,6 @@ print()
 
 #--------- QUESTION 3 ---------
 # Write a Python program to find the maximum element in a list using recursion.
+def greatest_number(num_list,i):
+    if(i==len(num_list)-1):
+        return num_list[i]
